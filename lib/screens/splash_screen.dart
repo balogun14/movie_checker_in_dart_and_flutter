@@ -13,16 +13,19 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Movie Chexker',
+      title: 'Movie Checker by Awwal',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
       home: Center(
-          child: Container(
+          child: SizedBox(
         height: 200,
         width: 200,
-       child: Image.asset("assets/images/logo.jpg",fit: BoxFit.contain,),
-        
+        child: Image.asset(
+          "assets/images/logo.jpg",
+          fit: BoxFit.contain,
+          colorBlendMode: BlendMode.dst,
+        ),
       )),
     );
   }
